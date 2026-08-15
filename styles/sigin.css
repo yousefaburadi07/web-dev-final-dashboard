@@ -1,0 +1,58 @@
+body {
+    background-color: var(--secondary);
+
+    * {
+
+        font-family: "JetBrains Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+}
+
+fieldset {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--primary-bg);
+    border: 10px solid black;
+
+    legend {
+        margin-left: 20px;
+        background-color: var(--primary);
+        box-sizing: border-box;
+
+    }
+
+}
+
+#signin-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    input {
+        border: 5px solid black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: var(--primary);
+        color: white;
+
+    }
+
+}
+
+#error{
+    font-size: 16px;
+    background: #e06565;
+    color: white;
+    text-align: center;
+
+}

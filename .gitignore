@@ -1,0 +1,26 @@
+# =========================
+# 1. Security & Credentials
+# =========================
+db/db.php
+
+# =========================
+# 2. User Uploaded Files
+# =========================
+uploads/*
+!uploads/.gitkeep
+
+# =========================
+# 3. Neovim / Vim Files
+# =========================
+# These are the annoying swap and backup files Neovim makes
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# =========================
+# 4. OS Hidden Files
+# =========================
+.DS_Store
+Thumbs.db

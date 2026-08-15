@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+    --primary: #FC7F23;
+    --secondary: #DBCFA7;
+    --primary-bg: #F5F5F5;
+    
+
+}
+
+body{
+    background-color:var(--primary-bg);
+
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold,
+* {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 3ms ease-in;
+}
