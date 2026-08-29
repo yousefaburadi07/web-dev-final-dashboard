@@ -53,29 +53,10 @@ if (isset($_POST['save'])) {
 ?>
 
 <body>
-    <header>
-        <section class="logo">
-            <h1>Dashborad</h1>
-        </section>
-
-        <section class="header_body">
-            <h1>
-                <?= $page_title ?>
-            </h1>
-        </section>
-    </header>
-
-    <aside>
-        <nav>
-            <a href="../projects/" class="side_btn">projects</a>
-            <a href="../categories/" class="side_btn">categories</a>
-            <a href="../skills/" class="side_btn">skills</a>
-        </nav>
-
-        <form method="post" action="">
-            <button type="submit" name="signout" class="side_btn" id="sign_out">Sign out</button>
-        </form>
-    </aside>
+    <?php
+    include('../../components/header.php');
+    include('../../components/aside.php');
+    ?>
 
     <main>
 

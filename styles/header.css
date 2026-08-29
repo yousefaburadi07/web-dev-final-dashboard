@@ -3,7 +3,7 @@ header {
     border-bottom: 5px solid black;
 
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(200px,350px) 2fr;
     position: sticky;
     background-color: var(--secondary);
     top: 0;
@@ -33,9 +33,13 @@ header {
     align-items: center;
     flex: 1;
     padding: 10px;
+        width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 
     h1 {
         font-size: 20px;
+        flex: 1;
 
     }
 

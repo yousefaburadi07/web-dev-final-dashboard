@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(200px, 350px) 2fr;
     grid-template-rows: 70px auto;
     min-height: 100vh;
     min-height: 100%;
@@ -39,7 +39,6 @@ aside {
     border-right: 5px solid black;
     position: sticky;
     top: 70px;
-    height: 100%;
     height: calc(100vh - 70px);
 
     h1 {
