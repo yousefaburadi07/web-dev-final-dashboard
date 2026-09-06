@@ -15,8 +15,10 @@ require("../db/db.php");
 $err_msg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $input_username = $_POST["username"];
     $input_password = $_POST["password"];
+
     if (!empty(trim($input_username)) && !empty($input_password)) {
         $input_username = htmlspecialchars($input_username);
         $sql = "SELECT password, id, is_admin FROM Users WHERE username = :username;";
@@ -55,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <fieldset>
         <legend>signin</legend>
         <form method="POST" id="signin-form" action="signin.php">
-            <label for="username">Username:</label>
+           <label for="username">Username:</label>
             <input type="text" placeholder="username" name="username" id="username" required />
 
             <label for="password">Passwrod:</label>
