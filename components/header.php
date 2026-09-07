@@ -7,5 +7,6 @@
         <h1>
             <?= $page_title ?>
         </h1>
+        <a href="./add.php">ADD</a>
     </section>
 </header>
